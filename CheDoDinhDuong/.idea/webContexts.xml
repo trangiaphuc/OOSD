@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Views/vwAdmin/editfood.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Views/vwAdmin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Views/vwHome/home.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Views/vwHome" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+.background_food{
+    background:url('../Imgs/background_food.jpg') no-repeat center;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.card-hover{
+    box-shadow: 8px 8px 8px lightskyblue;
+    transform: scale(1.2);
+}
