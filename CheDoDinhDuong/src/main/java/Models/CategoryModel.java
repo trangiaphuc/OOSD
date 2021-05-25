@@ -3,11 +3,12 @@ package Models;
 import beans.Category;
 import org.sql2o.Connection;
 import Utilties.DBUtils;
+import template.TemplateMethodModel;
 
 import java.util.List;
 import java.util.Optional;
 
-public class CategoryModel {
+public class CategoryModel extends TemplateMethodModel {
 
 
     public static List<Category> getAll() {
@@ -65,6 +66,16 @@ public class CategoryModel {
         try (Connection con = DBUtils.getConnection()){
             return con.createQuery(sql)
                     .addParameter("catName",catName)
+                    .executeScalar(int.class);
+        }
+    }
+
+    @Override
+    protected int getIdByName(String name) {
+        final String sql = "select catID from category where catName=:catName";
+        try (Connection con = DBUtils.getConnection()){
+            return con.createQuery(sql)
+                    .addParameter("catName",name)
                     .executeScalar(int.class);
         }
     }

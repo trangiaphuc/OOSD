@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.servlet.jsp.PageContext;
+import template.TemplateMethodModel;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -103,8 +104,14 @@ public class AdminServlet extends HttpServlet {
             }
         }
 //        String a= request.getContextPath();
-//        System.out.println(a);
-        FoodModel.addNewFood(foodName, CategoryModel.getCatIDByCatName(catname),glucozo,kcal,lipit,protein,
+////        System.out.println(a);
+//        FoodModel.addNewFood(foodName, CategoryModel.getCatIDByCatName(catname),glucozo,kcal,lipit,protein,
+//                vitaminA,vitaminB,vitaminC,vitaminD,vitaminE,kali,fe,natri,imgurl);
+//
+        TemplateMethodModel templateMethodModel = new CategoryModel();
+
+
+        FoodModel.addNewFood(foodName, templateMethodModel.executeQ(catname),glucozo,kcal,lipit,protein,
                 vitaminA,vitaminB,vitaminC,vitaminD,vitaminE,kali,fe,natri,imgurl);
         ServletUtils.redirect("/Admin/FoodManagement",request,response);
     }

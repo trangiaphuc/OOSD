@@ -10,17 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aedd7f9-181f-44ae-b252-8749b2d89da7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/builder/BuilderUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilderUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/template/TemplateMethodModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CheDoDinhDuong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CheDoDinhDuong.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/AccountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/AccountServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/FoodServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/FoodServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Views/vwAdmin/usermanagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Views/vwAdmin/usermanagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Views/vwFood/BuildMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Views/vwFood/BuildMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/Views/vwAdmin/usermanagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/Views/vwAdmin/usermanagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/Views/vwFood/BuildMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/CheDoDinhDuong-1.0-SNAPSHOT/Views/vwFood/BuildMenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/AdminServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/CategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/CategoryModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +91,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,6 +245,7 @@
       <workItem from="1621812643792" duration="3878000" />
       <workItem from="1621853932981" duration="1955000" />
       <workItem from="1621911733963" duration="9953000" />
+      <workItem from="1621929478615" duration="676000" />
     </task>
     <servers />
   </component>
@@ -269,7 +269,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Controllers/AdminServlet.java</url>
-          <line>293</line>
+          <line>300</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
