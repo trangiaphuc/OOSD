@@ -3,11 +3,12 @@ package Models;
 import beans.Food;
 import org.sql2o.Connection;
 import Utilties.DBUtils;
+import template.TemplateMethodModel;
 
 import java.util.List;
 import java.util.Optional;
 
-public class FoodModel {
+public class FoodModel extends TemplateMethodModel {
     public static List<Food> getAll() {
         String sql = "select * from food";
         try (Connection con = DBUtils.getConnection()) {
@@ -200,14 +201,7 @@ public class FoodModel {
         }
     }
 
-    public static int getFoodIDByName(String name){
-        final String sql="select foodID from food where foodName=:foodName";
-        try (Connection con = DBUtils.getConnection()){
-            return con.createQuery(sql)
-                    .addParameter("foodName",name)
-                    .executeScalar(int.class);
-        }
-    }
+
 
     public static String getFoodNameByID(String id){
         final String sql="select foodName from food where foodID=:foodID";
@@ -215,6 +209,16 @@ public class FoodModel {
             return con.createQuery(sql)
                     .addParameter("foodID",id)
                     .executeScalar(String.class);
+        }
+    }
+
+    @Override
+    protected int getIdByName(String name) {
+        final String sql="select foodID from food where foodName=:foodName";
+        try (Connection con = DBUtils.getConnection()){
+            return con.createQuery(sql)
+                    .addParameter("foodName",name)
+                    .executeScalar(int.class);
         }
     }
 }

@@ -1,6 +1,7 @@
 package beans;
 
 import Models.FoodModel;
+import template.TemplateMethodModel;
 
 public class SuggestMenu {
     private int id;
@@ -68,6 +69,7 @@ public class SuggestMenu {
     }
 
     public int getFoodIDByName(){
-        return FoodModel.getFoodIDByName(foodName);
+        TemplateMethodModel templateMethodModel = new FoodModel();
+        return templateMethodModel.executeQ(foodName);
     }
 }
