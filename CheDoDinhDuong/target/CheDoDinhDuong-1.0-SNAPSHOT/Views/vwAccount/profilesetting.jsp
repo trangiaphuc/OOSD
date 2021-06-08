@@ -250,8 +250,8 @@
 
 
                         <div class="thumbnail text-center">
-                            <img style="width: 250px;height: 280px"  class="img-fluid" src="${pageContext.request.contextPath}${authUser.urlImage}" alt="where your personal picture will be showed" />
-                            <h2 class="fs-18 mt-10 mb-0">${authUser.fullName}</h2>
+                            <img style="width: 250px;height: 280px"  class="img-fluid" src="${pageContext.request.contextPath}${authUser.getUrlImage()}" alt="where your personal picture will be showed" />
+                            <h2 class="fs-18 mt-10 mb-0">${authUser.getFullName()}</h2>
                             <h3 class="fs-11 mt-0 mb-10 text-muted">USER</h3>
                         </div>
 
@@ -268,7 +268,7 @@
                         <!-- info -->
                         <div class="box-light mb-30">
                             <div class="text-muted">
-                                <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.fullName}</h2>
+                                <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.getFullName()}</h2>
                                 <p>This is your personal information. You can change your info.</p>
 
                                 <ul class="list-unstyled m-0">
@@ -299,30 +299,30 @@
                                     <form action="#" method="post" id="frmProfilesetting">
                                         <div class="form-group">
                                             <label class="form-control-label">UserName</label>
-                                            <input readonly type="text" name="usernameinfo"  class="form-control" value="${authUser.userName}">
+                                            <input readonly type="text" name="usernameinfo"  class="form-control" value="${authUser.getUserName()}">
                                         </div>
 
                                         <div class="form-group">
                                             <label class="form-control-label">Full Name</label>
-                                            <input type="text" name="fullnameinfo"  class="form-control" value="${authUser.fullName}">
+                                            <input type="text" name="fullnameinfo"  class="form-control" value="${authUser.getFullName()}">
                                         </div>
 
                                         <div class="form-group">
                                             <label class="form-control-label">Age</label>
-                                            <input type="number" name="ageinfo" class="form-control" value="${authUser.age}">
+                                            <input type="number" name="ageinfo" class="form-control" value="${authUser.getAge()}">
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label">Height</label>
-                                            <input type="number" step="0.5" min="0" name="heightinfo" value="${authUser.height}" class="form-control" >
+                                            <input type="number" step="0.5" min="0" name="heightinfo" value="${authUser.getHeight()}" class="form-control" >
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label">Weight</label>
-                                            <input type="number" step="0.5" min="0" name="weightinfo" value="${authUser.weight}" class="form-control">
+                                            <input type="number" step="0.5" min="0" name="weightinfo" value="${authUser.getWeight()}" class="form-control">
                                         </div>
 
 
                                         <c:choose>
-                                            <c:when test="${authUser.sex == false}">
+                                            <c:when test="${authUser.isSex() == false}">
                                                 <div class="form-group">
                                                     <label class="form-control-label">Sex</label>
                                                     <label class="select mb-10 mt-20">
@@ -431,7 +431,7 @@
                                     </script>
     --%>
                                     <form method="post" enctype="multipart/form-data">
-                                        <input type="text" name="test"  readonly class="form-control" value="${authUser.userName}">
+                                        <input type="text" name="test"  readonly class="form-control" value="${authUser.getUserName()}">
 
                                         <div class="form-group row">
                                             <div class="file-upload">
@@ -490,7 +490,7 @@
                                         </c:if>
                                         <div class="form-group">
                                             <label class="form-control-label">Username</label>
-                                            <input type="text" name="curusername" id="txtCurusername" readonly class="form-control" value="${authUser.userName}">
+                                            <input type="text" name="curusername" id="txtCurusername" readonly class="form-control" value="${authUser.getUserName()}">
                                         </div>
 
                                         <div class="form-group">

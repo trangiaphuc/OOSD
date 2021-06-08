@@ -12,8 +12,8 @@
                 <div class="col-lg-3 col-md-3 col-sm-4">
 
                     <div class="thumbnail text-center">
-                        <img class="img-fluid" src="${pageContext.request.contextPath}${authUser.urlImage}" alt=""/>
-                        <h2 class="fs-18 mt-10 mb-0">${authUser.fullName}</h2>
+                        <img class="img-fluid" src="${pageContext.request.contextPath}${authUser.getUrlImage()}" alt=""/>
+                        <h2 class="fs-18 mt-10 mb-0">${authUser.getFullName()}</h2>
                         <h3 class="fs-11 mt-0 mb-10 text-muted">USER</h3>
                     </div>
 
@@ -34,7 +34,7 @@
                     <!-- info -->
                     <div class="box-light mb-30">
                         <div class="text-muted">
-                            <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.fullName}</h2>
+                            <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.getFullName()}</h2>
                             <p>This is your personal information. You can change your info.</p>
 
                             <ul class="list-unstyled m-0">

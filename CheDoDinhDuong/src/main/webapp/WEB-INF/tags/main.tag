@@ -108,7 +108,7 @@
                                     </c:if>
                                         <li class="dropdown"><!-- PAGES -->
                                         <a class="dropdown-toggle" href="#" name="nametag">
-                                            Hi, <b>${authUser.fullName} </b>
+                                            Hi, <b>${authUser.getFullName()} </b>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown">

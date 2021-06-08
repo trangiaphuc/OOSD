@@ -48,8 +48,8 @@
                     <div class="col-lg-3 col-md-3 col-sm-4">
 
                         <div class="thumbnail text-center">
-                            <img  class="img-fluid" src="${pageContext.request.contextPath}${authUser.urlImage}" alt="" />
-                            <h2 class="fs-18 mt-10 mb-0">${authUser.fullName}</h2>
+                            <img  class="img-fluid" src="${pageContext.request.contextPath}${authUser.getUrlImage()}" alt="" />
+                            <h2 class="fs-18 mt-10 mb-0">${authUser.getFullName()}</h2>
                             <h3 class="fs-11 mt-0 mb-10 text-muted">USER</h3>
                         </div>
 
@@ -68,7 +68,7 @@
                         <!-- info -->
                         <div class="box-light mb-30">
                             <div class="text-muted">
-                                <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.fullName}</h2>
+                                <h2 class="fs-18 text-muted mb-6"><b>About</b> ${authUser.getFullName()}</h2>
                                 <p>This is your personal information. You can change your info.</p>
 
                                 <ul class="list-unstyled m-0">
@@ -104,37 +104,37 @@
                                             <div class="form-group row">
                                                 <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" name="usernameprofile"  readonly class="form-control-plaintext" id="staticEmail" value="${authUser.userName}">
+                                                    <input type="text" name="usernameprofile"  readonly class="form-control-plaintext" id="staticEmail" value="${authUser.getUserName()}">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="staticEmail1" class="col-sm-2 col-form-label">Full Name</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail1" value="${authUser.fullName}">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail1" value="${authUser.getFullName()}">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="staticEmail2" class="col-sm-2 col-form-label">Age</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="${authUser.age}">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="${authUser.getAge()}">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="staticEmail3" class="col-sm-2 col-form-label">Height</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail3" value="${authUser.height} (cm)">
+                                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail3" value="${authUser.getHeight()} (cm)">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="staticEmail4" class="col-sm-2 col-form-label">Weight</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text"  readonly class="form-control-plaintext" id="staticEmail4" value="${authUser.weight} (kg)">
+                                                    <input type="text"  readonly class="form-control-plaintext" id="staticEmail4" value="${authUser.getWeight()} (kg)">
                                                 </div>
                                             </div>
 
                                         
                                            <c:choose>
-                                               <c:when test="${authUser.sex == false}">
+                                               <c:when test="${authUser.isSex() == false}">
                                                    <div class="form-group row">
                                                        <label for="staticEmail5" class="col-sm-2 col-form-label">Sex</label>
                                                        <div class="col-sm-10">

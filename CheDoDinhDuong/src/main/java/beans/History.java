@@ -4,9 +4,9 @@ import java.sql.Date;
 import java.time.LocalDate;
 
 public class History {
-    int historyID, userID;
-    double weight,height;
-    Date dateUpdate;
+    private int historyID, userID;
+    private double weight,height;
+    private Date dateUpdate;
 
     public History() {
     }

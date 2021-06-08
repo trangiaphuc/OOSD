@@ -2,12 +2,12 @@ package beans;
 
 public class User {
 
-    int userID,role,age;
-    String userName,password,fullName;
-    double height,weight;
-    boolean sex;
-    String urlImage;
-    boolean isDelete;
+    private int userID,role,age;
+    private String userName,password,fullName;
+    private double height,weight;
+    private boolean sex;
+    private String urlImage;
+    private boolean isDelete;
 
     public User() {
     }
