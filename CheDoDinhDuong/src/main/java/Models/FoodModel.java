@@ -83,6 +83,16 @@ public class FoodModel extends TemplateMethodModel {
         }
 
     }
+
+    public static int getFoodIDByName(String name){
+        final String sql="select foodID from food where foodName=:foodName";
+        try (Connection con = DBUtils.getConnection()){
+            return con.createQuery(sql)
+                    .addParameter("foodName",name)
+                    .executeScalar(int.class);
+        }
+    }
+
     public static List<Food> getListFoodHaveIngredient() {
         final String sql = "SELECT food.foodID,food.foodName,food.catID,food.glucozo,food.kcal,food.protein,food.lipit,food.vitA,food.vitB,food.vitC,food.vitD,food.vitE,food.kali,food.na,food.fe,food.urlImage,food.isDelete\n" +
                 "FROM (SELECT foodID as LFID\n" +
