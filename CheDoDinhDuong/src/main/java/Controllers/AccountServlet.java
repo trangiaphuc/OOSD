@@ -269,6 +269,7 @@ public class AccountServlet extends HttpServlet {
                 .buildPass(bcryptHashString)
                 .buildName(name)
                 .buildSex(sex)
+                .buildImg(urlImage)
                 .build();
 
         System.out.println(user);
