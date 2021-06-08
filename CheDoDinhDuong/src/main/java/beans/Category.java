@@ -1,8 +1,8 @@
 package beans;
 
 public class Category {
-    int CatID;
-    String CatName;
+    private int CatID;
+    private String CatName;
 
     public Category(int catID, String catName) {
         CatID = catID;

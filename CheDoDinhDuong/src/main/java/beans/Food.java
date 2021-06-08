@@ -3,11 +3,11 @@ package beans;
 import Models.FoodModel;
 
 public class Food {
-    int foodID;
-    String foodName,urlImage;
-    int catID;
-    float glucozo,kcal,lipit,protein,vitA,vitB,vitC,vitD,vitE,kali,fe,na;
-    boolean isDelete;
+    private int foodID;
+    private String foodName,urlImage;
+    private int catID;
+    private float glucozo,kcal,lipit,protein,vitA,vitB,vitC,vitD,vitE,kali,fe,na;
+    private boolean isDelete;
 
     public Food(int foodID, String foodName) {
         this.foodID = foodID;

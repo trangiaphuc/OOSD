@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img style="max-width: 200px;max-height: 300px" alt="${food.foodName}" title="${food.foodName}" src="${pageContext.request.contextPath}${food.getUrlImage()}">
+                            <img style="max-width: 200px;max-height: 300px" alt="${food.getFoodName()}" title="${food.getFoodName()}" src="${pageContext.request.contextPath}${food.getUrlImage()}">
                             <div>&nbsp;</div>
                             <c:choose>
                                 <c:when test="${ingredientoffood.size() ==0 }"></c:when>
@@ -40,12 +40,12 @@
                                             <tr>
                                                 <td>
                                                     <p class="card-text mt-3">
-                                                            ${c.ingredientName}
+                                                            ${c.getIngredientName()}
                                                     </p>
                                                 </td>
                                                 <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${c.gram}" type="number"/>
+                                        <fmt:formatNumber value="${c.getGram()}" type="number"/>
                                     </span>
                                                     g
                                                 </td>
@@ -68,7 +68,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.kcal}" type="number"/>
+                                        <fmt:formatNumber value="${food.getKcal()}" type="number"/>
                                     </span>
                                         Kcal/Phần
                                     </td>
@@ -81,7 +81,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.protein}" type="number"/>
+                                        <fmt:formatNumber value="${food.getProtein()}" type="number"/>
                                     </span>
                                         g
                                     </td>
@@ -94,7 +94,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.lipit}" type="number"/>
+                                        <fmt:formatNumber value="${food.getLipit()}" type="number"/>
                                     </span>
                                         g
                                     </td>
@@ -107,7 +107,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.glucozo}" type="number"/>
+                                        <fmt:formatNumber value="${food.getGlucozo()}" type="number"/>
                                     </span>
                                         g
                                     </td>
@@ -120,7 +120,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.vitA}" type="number"/>
+                                        <fmt:formatNumber value="${food.getVitA()}" type="number"/>
                                     </span>
                                         µg
                                     </td>
@@ -133,7 +133,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.vitC}" type="number"/>
+                                        <fmt:formatNumber value="${food.getVitC()}" type="number"/>
                                     </span>
                                         mg
                                     </td>
@@ -146,7 +146,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.vitD}" type="number"/>
+                                        <fmt:formatNumber value="${food.getVitD()}" type="number"/>
                                     </span>
                                         µg
                                     </td>
@@ -159,7 +159,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.kali}" type="number"/>
+                                        <fmt:formatNumber value="${food.getKali()}" type="number"/>
                                     </span>
                                         mg
                                     </td>
@@ -172,7 +172,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.fe}" type="number"/>
+                                        <fmt:formatNumber value="${food.getFe()}" type="number"/>
                                     </span>
                                         mg
                                     </td>
@@ -185,7 +185,7 @@
                                     </td>
                                     <td>
                                     <span class="text-danger font-weight-bold">
-                                        <fmt:formatNumber value="${food.na}" type="number"/>
+                                        <fmt:formatNumber value="${food.getNa()}" type="number"/>
                                     </span>
                                         mg
                                     </td>

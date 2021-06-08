@@ -15,10 +15,10 @@
                         </div>
                         <div class="list-group list-group-flush">
                             <c:forEach var="c" items="${categoriesWithDetails}">
-                                <a href="${pageContext.request.contextPath}/Food/ByCat?id=${c.catID}"
+                                <a href="${pageContext.request.contextPath}/Food/ByCat?id=${c.getCatID()}"
                                    class="list-group-item list-group-item-action">
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                        ${c.catName}
+                                        ${c.getCatName()}
                                 </a>
                             </c:forEach>
                         </div>
@@ -43,13 +43,13 @@
                                         <c:when test="${c.isDelete() == false}">
                                             <div class="col-sm-4 mb-3 fullwidth" >
                                                 <div class="card">
-                                                    <a href="${pageContext.request.contextPath}/Food/Detail?id=${c.foodID}">
+                                                    <a href="${pageContext.request.contextPath}/Food/Detail?id=${c.getFoodID()}">
                                                         <img src="${pageContext.request.contextPath}${c.getUrlImage()}"
-                                                             alt="${c.foodID}" title="${c.foodName}" class="card-img-top"/>
+                                                             alt="${c.getFoodID()}" title="${c.foodName}" class="card-img-top"/>
                                                         <div class="card-body">
-                                                            <h6 class="card-title" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 80%">${c.foodName}</h6>
+                                                            <h6 class="card-title" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 80%">${c.getFoodName()}</h6>
                                                             <h5 class="card-title text-danger">
-                                                                <fmt:formatNumber value="${c.kcal}" type="number"/> Kcal/Phần
+                                                                <fmt:formatNumber value="${c.getKcal()}" type="number"/> Kcal/Phần
                                                             </h5>
                                                         </div>
                                                         <div class="card-footer bg-success">
@@ -64,13 +64,13 @@
                                                                 <tbody>
                                                                 <tr>
                                                                     <td>
-                                                                            ${c.protein}
+                                                                            ${c.getProtein()}
                                                                     </td>
                                                                     <td>
-                                                                            ${c.lipit}
+                                                                            ${c.getLipit()}
                                                                     </td>
                                                                     <td>
-                                                                            ${c.glucozo}
+                                                                            ${c.getGlucozo()}
                                                                     </td>
                                                                 </tr>
                                                                 </tbody>

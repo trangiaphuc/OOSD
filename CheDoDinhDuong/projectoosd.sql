@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : MySQL
+ Source Server         : OOSD
  Source Server Type    : MySQL
  Source Server Version : 100417
  Source Host           : localhost:3306
- Source Schema         : projectse
+ Source Schema         : projectoosd
 
  Target Server Type    : MySQL
  Target Server Version : 100417
  File Encoding         : 65001
 
- Date: 21/05/2021 14:46:44
+ Date: 08/06/2021 10:13:33
 */
 
 SET NAMES utf8mb4;
@@ -105,6 +105,7 @@ INSERT INTO `custommenu` VALUES (1, 12, '2021-06-02 19:00:00', 1);
 INSERT INTO `custommenu` VALUES (1, 30, '2021-05-13 14:16:00', 3);
 INSERT INTO `custommenu` VALUES (1, 30, '2021-05-17 14:17:00', 3);
 INSERT INTO `custommenu` VALUES (1, 30, '2021-05-31 22:23:00', 3);
+INSERT INTO `custommenu` VALUES (2, 8, '2021-06-09 10:12:00', 1);
 
 -- ----------------------------
 -- Table structure for food
@@ -146,28 +147,28 @@ INSERT INTO `food` VALUES (6, 'Thịt heo', 2, NULL, 242, 14, 25, 0.021, NULL, N
 INSERT INTO `food` VALUES (7, 'Thịt bò nạc', 2, NULL, 250, 15, 26, 0, NULL, 0, 0.021, NULL, 72, 2.6, 318, '/Public/Imgs/Food/7.jpg', b'0');
 INSERT INTO `food` VALUES (8, 'Phở bò tái', 1, 59.3, 413, 11.7, 17.9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '/Public/Imgs/Food/8.jpg', b'0');
 INSERT INTO `food` VALUES (9, 'Bánh phở', 1, 31.7, 143, 0.4, 3.2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '/Public/Imgs/Food/9.jpg', b'0');
-INSERT INTO `food` VALUES (10, 'Phở gà', 1, 59.3, 458, 16.2, 18.8, 55.8, NULL, 41.52, NULL, NULL, 173.4, 3.6, 255.6, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (11, 'Thịt gà', 2, 0, 239, 14, 27, 0.483, NULL, NULL, 0.05, NULL, 223, 1.3, 82, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (12, 'Cam', 4, 15.5, 68, 0, 1.7, NULL, NULL, NULL, 73.6, NULL, 198.7, 0.74, 7.4, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (13, 'Khế', 4, 1.9, 9, 0, 0.4, 0, NULL, 18.3, NULL, NULL, 0, 0.54, 0, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (14, 'Chôm Chôm', 4, 3.3, 14, 0, 0.3, NULL, NULL, NULL, NULL, NULL, NULL, 0.1, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (15, 'Cóc', 4, 7.4, 34, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, 0.92, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (16, 'Củ sắn', 4, 11.1, 52, 0, 1.9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (17, 'Dâu tây', 4, 2, 11, 0.1, 0.5, NULL, NULL, 15, NULL, NULL, NULL, 0.17, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (18, 'Hồng đỏ', 4, 5.6, 25, 0, 0.6, 0, 0, 0, 0, 0, 192.6, 0.18, 3.6, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (19, 'Lê', 4, 20.6, 91, 0.4, 1.4, NULL, NULL, NULL, NULL, NULL, 177.8, 4.65, 10.1, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (20, 'Hồng xiêm (Saboche) (Lòng mứt)', 4, 11.5, 55, 0.8, 0.6, NULL, NULL, NULL, NULL, NULL, 0, 2.64, 0, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (21, 'Mận', 4, 2.5, 11, 0, 0.3, NULL, NULL, 21, NULL, NULL, NULL, 0.35, 0, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (22, 'Nhãn', 4, 0.9, 4, 0, 0.1, NULL, NULL, 4.52, NULL, NULL, 17, 0.03, 1.7, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (23, 'Ổi', 4, 12.3, 53, 0, 1, NULL, NULL, 99.9, NULL, NULL, 465.6, 2.15, 6.6, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (24, 'Quýt', 4, 6.4, 28, 0, 0.6, NULL, NULL, 40.7, NULL, NULL, 82.1, 0.3, 3, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (25, 'Xoài', 4, 41.2, 179, 0.8, 1.6, NULL, NULL, 77.7, NULL, NULL, 295.3, 1.04, 0.8, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (26, 'Vải', 4, 2.1, 9, 0, 0.1, 0, 0, 7.56, 0, 0, 0, 0.1, 0, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (27, 'Thanh long', 4, 49, 225, 0, 7.3, NULL, NULL, 54.05, NULL, NULL, NULL, 3.38, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (28, 'Vú sữa', 4, 18.5, 83, 0, 2, NULL, NULL, 9.85, NULL, NULL, NULL, 0.79, NULL, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (29, 'Táo tây', 4, 25.8, 107, 0, 1.1, NULL, NULL, 15.96, NULL, NULL, 232.6, 5.7, 34.2, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (30, 'Cơm trứng', 3, 44.4, 281, 6.3, 11.9, NULL, NULL, NULL, NULL, NULL, 226, 2.07, 80.3, '/Public/Imgs/Food/1.jpg', b'0');
-INSERT INTO `food` VALUES (31, 'Bún thịt nướng', 1, NULL, 352, 14, 26.7, NULL, NULL, NULL, 0.159, NULL, 423, 1.1, 62, '/Public/Imgs/Food/1.jpg', b'0');
+INSERT INTO `food` VALUES (10, 'Phở gà', 1, 59.3, 458, 16.2, 18.8, 55.8, NULL, 41.52, NULL, NULL, 173.4, 3.6, 255.6, '/Public/Imgs/Food/10.jpg', b'0');
+INSERT INTO `food` VALUES (11, 'Thịt gà', 2, 0, 239, 14, 27, 0.483, NULL, NULL, 0.05, NULL, 223, 1.3, 82, '/Public/Imgs/Food/11.jpg', b'0');
+INSERT INTO `food` VALUES (12, 'Cam', 4, 15.5, 68, 0, 1.7, NULL, NULL, NULL, 73.6, NULL, 198.7, 0.74, 7.4, '/Public/Imgs/Food/12.jpg', b'0');
+INSERT INTO `food` VALUES (13, 'Khế', 4, 1.9, 9, 0, 0.4, 0, NULL, 18.3, NULL, NULL, 0, 0.54, 0, '/Public/Imgs/Food/13.jpg', b'0');
+INSERT INTO `food` VALUES (14, 'Chôm Chôm', 4, 3.3, 14, 0, 0.3, NULL, NULL, NULL, NULL, NULL, NULL, 0.1, NULL, '/Public/Imgs/Food/14.jpg', b'0');
+INSERT INTO `food` VALUES (15, 'Cóc', 4, 7.4, 34, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, 0.92, NULL, '/Public/Imgs/Food/15.jpg', b'0');
+INSERT INTO `food` VALUES (16, 'Củ sắn', 4, 11.1, 52, 0, 1.9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '/Public/Imgs/Food/16.jpg', b'0');
+INSERT INTO `food` VALUES (17, 'Dâu tây', 4, 2, 11, 0.1, 0.5, NULL, NULL, 15, NULL, NULL, NULL, 0.17, NULL, '/Public/Imgs/Food/17.jpg', b'0');
+INSERT INTO `food` VALUES (18, 'Hồng đỏ', 4, 5.6, 25, 0, 0.6, 0, 0, 0, 0, 0, 192.6, 0.18, 3.6, '/Public/Imgs/Food/18.jpg', b'0');
+INSERT INTO `food` VALUES (19, 'Lê', 4, 20.6, 91, 0.4, 1.4, NULL, NULL, NULL, NULL, NULL, 177.8, 4.65, 10.1, '/Public/Imgs/Food/19.jpg', b'0');
+INSERT INTO `food` VALUES (20, 'Saboche', 4, 11.5, 55, 0.8, 0.6, NULL, NULL, NULL, NULL, NULL, 0, 2.64, 0, '/Public/Imgs/Food/20.jpg', b'0');
+INSERT INTO `food` VALUES (21, 'Mận', 4, 2.5, 11, 0, 0.3, NULL, NULL, 21, NULL, NULL, NULL, 0.35, 0, '/Public/Imgs/Food/21.jpg', b'0');
+INSERT INTO `food` VALUES (22, 'Nhãn', 4, 0.9, 4, 0, 0.1, NULL, NULL, 4.52, NULL, NULL, 17, 0.03, 1.7, '/Public/Imgs/Food/22.jpg', b'0');
+INSERT INTO `food` VALUES (23, 'Ổi', 4, 12.3, 53, 0, 1, NULL, NULL, 99.9, NULL, NULL, 465.6, 2.15, 6.6, '/Public/Imgs/Food/23.jpg', b'0');
+INSERT INTO `food` VALUES (24, 'Quýt', 4, 6.4, 28, 0, 0.6, NULL, NULL, 40.7, NULL, NULL, 82.1, 0.3, 3, '/Public/Imgs/Food/24.jpg', b'0');
+INSERT INTO `food` VALUES (25, 'Xoài', 4, 41.2, 179, 0.8, 1.6, NULL, NULL, 77.7, NULL, NULL, 295.3, 1.04, 0.8, '/Public/Imgs/Food/25.jpg', b'0');
+INSERT INTO `food` VALUES (26, 'Vải', 4, 2.1, 9, 0, 0.1, 0, 0, 7.56, 0, 0, 0, 0.1, 0, '/Public/Imgs/Food/26.jpg', b'0');
+INSERT INTO `food` VALUES (27, 'Thanh long', 4, 49, 225, 0, 7.3, NULL, NULL, 54.05, NULL, NULL, NULL, 3.38, NULL, '/Public/Imgs/Food/27.jpg', b'0');
+INSERT INTO `food` VALUES (28, 'Vú sữa', 4, 18.5, 83, 0, 2, NULL, NULL, 9.85, NULL, NULL, NULL, 0.79, NULL, '/Public/Imgs/Food/28.jpg', b'0');
+INSERT INTO `food` VALUES (29, 'Táo tây', 4, 25.8, 107, 0, 1.1, NULL, NULL, 15.96, NULL, NULL, 232.6, 5.7, 34.2, '/Public/Imgs/Food/29.jpg', b'0');
+INSERT INTO `food` VALUES (30, 'Cơm trứng', 3, 44.4, 281, 6.3, 11.9, NULL, NULL, NULL, NULL, NULL, 226, 2.07, 80.3, '/Public/Imgs/Food/30.jpg', b'0');
+INSERT INTO `food` VALUES (31, 'Bún thịt nướng', 1, NULL, 352, 14, 26.7, NULL, NULL, NULL, 0.159, NULL, 423, 1.1, 62, '/Public/Imgs/Food/31.jpg', b'0');
 
 -- ----------------------------
 -- Table structure for historyuserbmi
@@ -182,7 +183,7 @@ CREATE TABLE `historyuserbmi`  (
   PRIMARY KEY (`historyID`) USING BTREE,
   INDEX `FK_historyuserbmi_user`(`userID`) USING BTREE,
   CONSTRAINT `FK_historyuserbmi_user` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of historyuserbmi
@@ -195,6 +196,7 @@ INSERT INTO `historyuserbmi` VALUES (12, 1, 999, 999, '2021-05-13 14:55:49');
 INSERT INTO `historyuserbmi` VALUES (13, 1, 77, 77, '2021-05-13 14:56:19');
 INSERT INTO `historyuserbmi` VALUES (14, 1, 99, 99, '2021-05-13 14:56:34');
 INSERT INTO `historyuserbmi` VALUES (15, 1, 99, 99, '2021-05-13 14:56:41');
+INSERT INTO `historyuserbmi` VALUES (16, 2, 0, 0, '2021-06-08 09:46:00');
 
 -- ----------------------------
 -- Table structure for ingredient
@@ -276,7 +278,7 @@ CREATE TABLE `user`  (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES (1, 'admin', '$2a$12$k7R6T5SFTn5SX5b4ymC3YOLaVr68PidMrbKZEojiOJYWbd6j9ICzi', 0, 'Adminitration', 0, 0, 0, b'0', '/Public/Imgs/Avts/14.jpg', b'0');
-INSERT INTO `user` VALUES (2, 'zhaohao', '$2a$12$ojpT8.k7p13z4UBOCplS9.FLJDVrlGV1dgyDEEPfL6vNaN7sVkbFu', 1, 'Duc Hao', 15, 0, 0, b'0', NULL, b'1');
+INSERT INTO `user` VALUES (2, 'haohao', '$2a$12$ojpT8.k7p13z4UBOCplS9.FLJDVrlGV1dgyDEEPfL6vNaN7sVkbFu', 1, 'Duc Hao', 15, 177, 58, b'0', '', b'0');
 INSERT INTO `user` VALUES (3, 'ldthang7410', '$2a$12$qRHqc/Onk/q3hIyvaVAWs.0u.mxKpVlc8kG//jO3x4zBsdFtv8VVO', 1, '123', 21, 0, 0, b'0', NULL, b'0');
 INSERT INTO `user` VALUES (4, 'abc', 'sdas', 1, 'zyx', 12, NULL, NULL, b'1', NULL, b'1');
 INSERT INTO `user` VALUES (5, 'hshd', '123', 1, 'Anh', 30, NULL, NULL, b'0', NULL, b'1');

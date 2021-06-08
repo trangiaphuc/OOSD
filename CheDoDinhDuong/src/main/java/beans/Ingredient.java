@@ -1,10 +1,10 @@
 package beans;
 
 public class Ingredient {
-    int foodID;
-    int ingredientID;
-    double gram;
-    String ingredientName;
+    private int foodID;
+    private int ingredientID;
+    private double gram;
+    private String ingredientName;
 
     public Ingredient(int foodID, int ingredientID, double gram, String ingredientName) {
         this.foodID = foodID;

@@ -16,9 +16,9 @@
                         </div>
                         <div class="list-group list-group-flush">
                             <c:forEach var="c" items="${categoriesWithDetails}">
-                                <a href="${pageContext.request.contextPath}/Food/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
+                                <a href="${pageContext.request.contextPath}/Food/ByCat?id=${c.getCatID()}" class="list-group-item list-group-item-action">
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                        ${c.catName}
+                                        ${c.getCatName()}
                                 </a>
                             </c:forEach>
                         </div>

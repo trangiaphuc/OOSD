@@ -135,7 +135,7 @@
                                                 <tr>
                                                     <td>
                                                         <p class="card-text mt-3">
-                                                                ${c.ingredientName}
+                                                                ${c.getIngredientName()}
                                                         </p>
                                                     </td>
                                                     <td>
